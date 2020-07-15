@@ -1,0 +1,58 @@
+.navigation {
+  background-color: rgba(30, 30, 30, 0.5);
+  height: 4rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.navigation .nav-header {
+  color: antiquewhite;
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.navigation .nav-icon {
+  color: antiquewhite;
+  font-size: 2rem;
+  position: absolute;
+  left: 20px;
+  top: 1rem;
+}
+
+.component-box {
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 1rem;
+
+  background-color: rgba(255, 255, 255, 0.8);
+
+  -webkit-box-shadow: 11px 13px 25px 1px rgba(255, 255, 255, 0.35);
+  -moz-box-shadow: 11px 13px 25px 1px rgba(255, 255, 255, 0.35);
+  box-shadow: 11px 13px 25px 1px rgba(255, 255, 255, 0.35);
+}
+
+.landing {
+  margin-top: 30vh;
+  padding: 1rem;
+
+  width: 60vw;
+}
+
+.info {
+  margin-top: 45vh;
+  padding: 1rem;
+  width: 100vw;
+  background-color: slategray;
+}
+
+.history {
+  margin-top: 20vh;
+  padding: 1rem;
+  width: 100vw;
+  background-color: slategray;
+}

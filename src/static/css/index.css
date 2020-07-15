@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: black url(../img/background.jpg) no-repeat fixed center;
+  background-size: 100vw auto;
+}

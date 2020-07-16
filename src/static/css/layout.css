@@ -1,0 +1,66 @@
+.navigation {
+  background-color: #1a1c1f;
+  height: 4rem;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.75);
+
+  z-index: 2;
+}
+
+.navigation .nav-header {
+  color: antiquewhite;
+  position: absolute;
+  right: 6vw;
+  top: 0;
+}
+
+.navigation .nav-icon {
+  color: antiquewhite;
+  font-size: 2rem;
+  position: absolute;
+  left: 20px;
+  top: 1rem;
+}
+
+.sidebar {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+
+  background-color: #1a1c1f;
+  color: antiquewhite;
+
+  width: 200px;
+  height: 100vh;
+
+  transition: width 0.25s ease-in-out;
+  -moz-transition: width 0.25s ease-in-out;
+  -webkit-transition: width 0.25s ease-in-out;
+
+  overflow: hidden;
+
+  z-index: 1;
+}
+
+.background-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: rgba(0, 0, 0, 0.5);
+
+  transition: background-color 0.25s ease-in-out;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+
+  z-index: 0;
+}

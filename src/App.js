@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 import Navigation from './components/layout/Navigation';
-import Landing from './components/sections/Landing';
-import Info from './components/sections/Info';
-import History from './components/sections/History';
+import Landing from './components/content/Landing';
+import Info from './components/content/Info';
+import History from './components/content/History';
 import './static/css/App.css';
+import './static/css/layout.css';
+import './static/css/content.css';
 
 class App extends Component {
   render() {
@@ -11,8 +13,10 @@ class App extends Component {
       <div className="container">
         <Navigation />
         <Landing />
-        <Info />
-        <History />
+        <div className="content-container">
+          <Info />
+          <History />
+        </div>
       </div>
     );
   }

@@ -2,6 +2,15 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background: black url(../img/background.jpg) no-repeat fixed center;
+  background: black url(../img/nathan-dumlao-KixfBEdyp64-unsplash-smaller.jpg)
+    no-repeat fixed center;
   background-size: 100vw auto;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    /* This is for the image to always fit to the screen
+    and it so happens to work with the tablet breakpoint */
+    background-size: auto 100vh;
+  }
 }

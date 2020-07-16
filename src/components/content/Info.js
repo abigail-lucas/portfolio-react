@@ -6,9 +6,13 @@ import Social from './info/Social';
 const Info = () => {
   return (
     <div className="info">
-      <Skills />
-      <About />
-      <Social />
+      <div className="flex-item">
+        <Skills />
+      </div>
+      <div className="flex-item">
+        <About />
+        <Social />
+      </div>
     </div>
   );
 };

@@ -3,9 +3,8 @@ import Navigation from './components/layout/Navigation';
 import Landing from './components/content/Landing';
 import Info from './components/content/Info';
 import History from './components/content/History';
-import './static/css/App.css';
-import './static/css/layout.css';
-import './static/css/content.css';
+
+import './static/css/index.css';
 
 class App extends Component {
   render() {

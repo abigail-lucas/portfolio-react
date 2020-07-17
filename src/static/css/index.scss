@@ -1,0 +1,20 @@
+@import 'colors';
+@import 'layout';
+@import 'content';
+@import 'skills';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: black url(../img/nathan-dumlao-KixfBEdyp64-unsplash-smaller.jpg)
+    no-repeat fixed center;
+  background-size: cover;
+}
+
+.content-container {
+  margin: 0;
+  margin-top: 45vh;
+  padding: 10vh 0;
+  background-color: $primary;
+}

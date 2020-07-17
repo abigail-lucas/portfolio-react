@@ -37,11 +37,12 @@ Darker looks better on mobile but resizing makes the color shift look weird. */
   margin-right: auto;
   padding: 1rem;
   width: 70vw;
-  background-color: slategray;
+  color: whitesmoke;
 }
 
 .flex-item {
   flex-grow: 1;
+  width: 100%;
 }
 
 .history {

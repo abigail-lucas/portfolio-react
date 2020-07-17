@@ -14,14 +14,14 @@
 }
 
 .navigation .nav-header {
-  color: antiquewhite;
+  color: whitesmoke;
   position: absolute;
   right: 6vw;
   top: 0;
 }
 
 .navigation .nav-icon {
-  color: antiquewhite;
+  color: whitesmoke;
   font-size: 2rem;
   position: absolute;
   left: 20px;
@@ -34,7 +34,7 @@
   left: 0;
 
   background-color: #1a1c1f;
-  color: antiquewhite;
+  color: whitesmoke;
 
   width: 200px;
   height: 100vh;

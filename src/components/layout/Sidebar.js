@@ -11,6 +11,7 @@ const Sidebar = () => {
           <li>woof</li>
         </ul>
       </div>
+      {/* TODO: make background onclick event to minimize sidebar */}
       <div
         className="background-shadow"
         id="background-shadow"

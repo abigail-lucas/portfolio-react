@@ -1,0 +1,24 @@
+.about-header {
+  margin-top: 0;
+  padding-top: 0;
+  color: $tertiary;
+}
+
+.social-links {
+  margin-top: 2rem;
+  font-size: 2rem;
+  display: flex;
+  justify-content: space-around;
+
+  a {
+    transition: color 0.2s ease-in-out;
+    -moz-transition: color 0.2s ease-in-out;
+    -webkit-transition: color 0.2s ease-in-out;
+
+    color: $secondary;
+  }
+
+  a:hover {
+    color: $tertiary;
+  }
+}

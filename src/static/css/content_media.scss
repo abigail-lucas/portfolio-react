@@ -1,0 +1,39 @@
+/* Is this a good idea??
+  Darker looks better on mobile but resizing makes the color shift look weird. */
+@media only screen and (max-width: 992px) {
+  .landing {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .info {
+    flex-flow: column;
+
+    .flex-item:first-of-type {
+      margin-top: 2.5rem;
+      padding-top: 1rem;
+      order: 2;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 15%;
+        top: 0;
+        height: 1px;
+        width: 70%;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .info {
+    .flex-item:first-of-type {
+      &:before {
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+}

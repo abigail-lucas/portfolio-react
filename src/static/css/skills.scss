@@ -1,7 +1,88 @@
+.skill-container {
+  .skills-container-header {
+    margin: 1rem auto;
+    padding: 4px 0;
+    color: $blue-1;
+
+    width: 60%;
+    max-width: 180px;
+    min-width: 120px;
+
+    text-align: center;
+
+    position: relative;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    // The following border animation has been taken from the following codepen:
+    // https://codepen.io/ramkirat/pen/VWzNYm
+    &:before,
+    &:after,
+    span:before,
+    span:after {
+      content: '';
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background: transparent;
+      transition: 1s;
+    }
+
+    &:before {
+      top: -2px;
+      left: -2px;
+      border-top: 2px solid $secondary;
+      border-left: 2px solid $secondary;
+    }
+    &:after {
+      top: -2px;
+      right: -2px;
+      border-top: 2px solid $secondary;
+      border-right: 2px solid $secondary;
+    }
+
+    span::before {
+      bottom: -2px;
+      left: -2px;
+      border-bottom: 2px solid $secondary;
+      border-left: 2px solid $secondary;
+    }
+    span::after {
+      bottom: -2px;
+      right: -2px;
+      border-bottom: 2px solid $secondary;
+      border-right: 2px solid $secondary;
+    }
+
+    &:hover::before,
+    &:hover::after,
+    &:hover span::before,
+    &:hover span::after {
+      width: calc(180px / 2);
+      height: calc(50px / 2);
+    }
+  }
+}
+
 .skills-list {
   margin: 0;
   padding: 0;
   list-style: none;
+
+  overflow: hidden;
+  -webkit-transition: max-height 0.75s ease-in-out;
+  -moz-transition: max-height 0.75s ease-in-out;
+  -ms-transition: max-height 0.75s ease-in-out;
+  -o-transition: max-height 0.75s ease-in-out;
+  transition: max-height 0.75s ease-in-out;
+
+  max-height: 1000px;
+
+  &.flat {
+    max-height: 0;
+  }
 
   li {
     padding: 8px 0;

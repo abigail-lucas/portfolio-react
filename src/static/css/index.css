@@ -101,10 +101,72 @@ Darker looks better on mobile but resizing makes the color shift look weird. */
   background-color: slategray;
 }
 
+.skill-container .skills-container-header {
+  margin: 1rem auto;
+  padding: 4px 0;
+  color: #0fabbc;
+  width: 60%;
+  max-width: 180px;
+  min-width: 120px;
+  text-align: center;
+  position: relative;
+}
+.skill-container .skills-container-header:hover {
+  cursor: pointer;
+}
+.skill-container .skills-container-header:before, .skill-container .skills-container-header:after,
+.skill-container .skills-container-header span:before,
+.skill-container .skills-container-header span:after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: transparent;
+  transition: 1s;
+}
+.skill-container .skills-container-header:before {
+  top: -2px;
+  left: -2px;
+  border-top: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+}
+.skill-container .skills-container-header:after {
+  top: -2px;
+  right: -2px;
+  border-top: 2px solid #f5f5f5;
+  border-right: 2px solid #f5f5f5;
+}
+.skill-container .skills-container-header span::before {
+  bottom: -2px;
+  left: -2px;
+  border-bottom: 2px solid #f5f5f5;
+  border-left: 2px solid #f5f5f5;
+}
+.skill-container .skills-container-header span::after {
+  bottom: -2px;
+  right: -2px;
+  border-bottom: 2px solid #f5f5f5;
+  border-right: 2px solid #f5f5f5;
+}
+.skill-container .skills-container-header:hover::before, .skill-container .skills-container-header:hover::after, .skill-container .skills-container-header:hover span::before, .skill-container .skills-container-header:hover span::after {
+  width: calc(180px / 2);
+  height: calc(50px / 2);
+}
+
 .skills-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  overflow: hidden;
+  -webkit-transition: max-height 0.75s ease-in-out;
+  -moz-transition: max-height 0.75s ease-in-out;
+  -ms-transition: max-height 0.75s ease-in-out;
+  -o-transition: max-height 0.75s ease-in-out;
+  transition: max-height 0.75s ease-in-out;
+  max-height: 1000px;
+}
+.skills-list.flat {
+  max-height: 0;
 }
 .skills-list li {
   padding: 8px 0;
